@@ -7,9 +7,22 @@ public class SeguimientoEnemigo : MonoBehaviour
     [SerializeField]
     private int Enemydamage;
 
+    public int maxHealth = 20; 
+    public int currentHealth;
+
     public Transform jugador;
     public float velocidad = 5f;
 
+
+    public void recibirdano(int damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 
     void Update()
     {

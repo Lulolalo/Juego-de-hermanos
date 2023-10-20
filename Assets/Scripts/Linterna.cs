@@ -59,4 +59,18 @@ public class Linterna : MonoBehaviour
         rb.MoveRotation(Quaternion.LerpUnclamped(rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime));
     }
 
+
+    private void OnTriggerEnter2D(Collider2D Other)
+    {
+        if (Other.CompareTag("Enemigo"))
+        {
+          
+
+            SeguimientoEnemigo FlashDamage = Other.gameObject.GetComponent<SeguimientoEnemigo>();
+
+            Other.GetComponent<SeguimientoEnemigo>().recibirdano(10);
+        }
+
+    }
+
 }

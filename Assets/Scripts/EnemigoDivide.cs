@@ -7,7 +7,10 @@ public class EnemigoDivide : MonoBehaviour
     public Transform jugador;
     public float velocidad = 5f;
     public GameObject enemigoPrefab;  // Prefab del enemigo a generar al morir
-    public int cantidadDeNuevosEnemigos = 2;  // Cantidad de nuevos enemigos a generar
+    
+
+    public int maxHealth = 20;
+    public int currentHealth;
 
     void Update()
     {
@@ -20,17 +23,21 @@ public class EnemigoDivide : MonoBehaviour
 
         // Mueve al enemigo en la dirección del jugador
         transform.Translate(direccion * velocidad * Time.deltaTime);
+
     }
-    void Morir()
+    public void recibirdamage(int damage)
     {
-        for (int i = 0; i < cantidadDeNuevosEnemigos; i++)
+        currentHealth -= damage;
+        if (currentHealth <= 0)
         {
-            // Genera un nuevo enemigo en una posición cercana al enemigo que murió
-            Vector3 nuevaPosicion = transform.position + Random.insideUnitSphere;
-            Instantiate(enemigoPrefab, nuevaPosicion, Quaternion.identity);
+            Destroy(gameObject);
+            Dividir();
         }
 
-        // Destruye el enemigo actual
-        Destroy(gameObject);
+    }
+
+    public void Dividir()
+    {
+        Instantiate(Enemigo, posicionSpawn, Quaternion.identity);
     }
 }
