@@ -24,7 +24,8 @@ public class JorguitoMovimiento : MonoBehaviour
     private float vertical;
     private float horizontal;
     private float rotate;
-
+    [SerializeField]
+    private GameObject linternaPJ;
     /*void Start()
     //{
         //currentHealth = maxHealth; // Inicializa la vida actual a la máxima al comienzo
@@ -61,11 +62,13 @@ public class JorguitoMovimiento : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
 
         //if (Input.GetKey(KeyCode.Q))
-            //rotate = -1;
+        //    rotate = -1;
         //else if (Input.GetKey(KeyCode.E))
-            //rotate = 1;
+        //    rotate = 1;
         //else
-            //rotate = 0;
+        //    rotate = 0;
+        //linternaPJ.transform.rotation = Quaternion.LookRotation(Input.acceleration.normalized, Vector3.up);
+
     }
 
     private void FixedUpdate()
