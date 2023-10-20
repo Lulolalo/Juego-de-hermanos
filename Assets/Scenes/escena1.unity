@@ -450,13 +450,25 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 190360975655296834, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
+      propertyPath: rotate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 190360975655296834, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 190360975655296834, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
       propertyPath: rotationSpeed
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 190360975655296834, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
       propertyPath: shootingPosition
       value: 
       objectReference: {fileID: 2059706152}
+    - target: {fileID: 190360975655296835, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 190360975655296836, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
       propertyPath: m_Name
       value: Linterna
@@ -466,8 +478,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 190360975655296837, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1322861
+      objectReference: {fileID: 0}
+    - target: {fileID: 190360975655296837, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.26314875
+      objectReference: {fileID: 0}
+    - target: {fileID: 190360975655296837, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 190360975655296837, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.66
+      value: 0.65999985
       objectReference: {fileID: 0}
     - target: {fileID: 190360975655296837, guid: cc986e61ae155de4e91a6d70aa60d6cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -710,14 +734,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413107452}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
