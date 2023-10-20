@@ -64,13 +64,22 @@ public class Linterna : MonoBehaviour
     {
         if (Other.CompareTag("Enemigo"))
         {
-          
-
             SeguimientoEnemigo FlashDamage = Other.gameObject.GetComponent<SeguimientoEnemigo>();
 
             Other.GetComponent<SeguimientoEnemigo>().recibirdano(10);
+
+            
+        }
+
+        if (Other.CompareTag("Enemigo2"))
+        {
+            EnemigoDivide Damage = Other.gameObject.GetComponent<EnemigoDivide>();
+
+            Other.GetComponent<EnemigoDivide>().Recibirdamage(10);
         }
 
     }
+
+    
 
 }
