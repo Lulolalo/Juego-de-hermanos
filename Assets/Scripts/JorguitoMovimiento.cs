@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JorguitoMovimiento : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class JorguitoMovimiento : MonoBehaviour
     {
         // Puedes agregar aquí acciones como reproducir una animación de muerte, mostrar un mensaje de Game Over, reiniciar el nivel, etc.
         Debug.Log("¡El jugador ha muerto!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         // Aquí podrías reiniciar el nivel, desactivar el personaje, mostrar un mensaje de Game Over, etc.
     }
 
