@@ -14,7 +14,7 @@ public class SeguimientoEnemigo : MonoBehaviour
     public float velocidad = 5f;
 
 
-    public void recibirdano(int damage)
+    public void RecibirDaño(int damage)
     {
         currentHealth -= damage;
         if (currentHealth <= 0)

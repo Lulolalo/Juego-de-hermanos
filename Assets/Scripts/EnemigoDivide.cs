@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemigoDivide : MonoBehaviour
 {
-    public GameObject Enemigo;
+    public SeguimientoEnemigo Enemigo;
     public Transform jugador;
     public float velocidad = 5f;
     public float rangoSpawn = 10f;
@@ -40,7 +40,9 @@ public class EnemigoDivide : MonoBehaviour
     void Dividir()
     {
         Vector3 posicionSpawn = transform.position + new Vector3(Random.Range(-rangoSpawn, rangoSpawn), 0, Random.Range(-rangoSpawn, rangoSpawn));
-        Instantiate(Enemigo, posicionSpawn, Quaternion.identity);
-        Instantiate(Enemigo, posicionSpawn, Quaternion.identity);
+        SeguimientoEnemigo enemigo = Instantiate(Enemigo, posicionSpawn, Quaternion.identity);
+        enemigo. jugador = jugador;
+        enemigo = Instantiate(Enemigo, posicionSpawn, Quaternion.identity);
+        enemigo.jugador = jugador;
     }
 }

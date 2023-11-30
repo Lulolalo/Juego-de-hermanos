@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SpawnEnemigoComun : MonoBehaviour
 {
-    public GameObject Enemigo;
+    public Transform jugador;
+    public SeguimientoEnemigo Enemigo;
     public float tiempoEntreSpawns = 3f;
     public float rangoSpawn = 10f;
 
@@ -27,6 +28,7 @@ public class SpawnEnemigoComun : MonoBehaviour
     void SpawnearEnemigo()
     {
         Vector3 posicionSpawn = transform.position + new Vector3(Random.Range(-rangoSpawn, rangoSpawn), 0, Random.Range(-rangoSpawn, rangoSpawn));
-        Instantiate(Enemigo, posicionSpawn, Quaternion.identity);
+        SeguimientoEnemigo enemigo = Instantiate(Enemigo, posicionSpawn, Quaternion.identity);
+        enemigo.jugador = jugador;
     }
 }
