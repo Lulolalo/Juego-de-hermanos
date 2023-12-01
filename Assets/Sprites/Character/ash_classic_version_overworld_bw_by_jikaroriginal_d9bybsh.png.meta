@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: 92e6feeb48b7da9409b859d20c36dc8c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 220
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95112c74a7fa3ad49be88c8512e50dfd
+      internalID: 1569043171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 220
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960c8ff0ec07989479757b286652f2c5
+      internalID: -1262827826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 220
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c205f40bd516a94dba0b4f7bd79b44d
+      internalID: -61020286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_3
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 220
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94236e26f242df42b4fd7f1aa38a58a
+      internalID: 1512572548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 148
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d79a227a6b22a44a0c1c23b57d85fc
+      internalID: -1109196022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 148
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3a9f7952cada84e82563098b7ac153
+      internalID: 503581308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_6
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 148
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136be8a6fe1f6a44e828059a769fe060
+      internalID: 542499187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_7
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 148
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51e3c66c2c614f43b14b9389bb6e738
+      internalID: 711142147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 76
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588638e52e0a14b4f8efacc96c6635b8
+      internalID: -508164754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 76
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4158292fc3c764eb7b6ac1b4bc013e
+      internalID: 745447809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 76
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ba643341431524f95402755bee9011
+      internalID: -1974009261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 76
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97019de3948511b428091ba516af854b
+      internalID: 1855692039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 4
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81df9e1ea0835274faaff47c6cd2072c
+      internalID: -789427289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 4
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374072a6b5d6734479230a77527825af
+      internalID: 1372032810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d3c350cb0019646b4ae64c0117ff76
+      internalID: -5215587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_15
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 4
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfb856ae835fce4bac01b39ab7e6c41
+      internalID: -2144944922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_0: 1569043171
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_1: -1262827826
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_15: -2144944922
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_9: 745447809
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_13: 1372032810
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_2: -61020286
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_11: 1855692039
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_8: -508164754
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_14: -5215587
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_10: -1974009261
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_3: 1512572548
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_6: 542499187
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_12: -789427289
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_5: 503581308
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_7: 711142147
+      ash_classic_version_overworld_bw_by_jikaroriginal_d9bybsh_4: -1109196022
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

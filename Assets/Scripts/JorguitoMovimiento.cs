@@ -27,6 +27,8 @@ public class JorguitoMovimiento : MonoBehaviour
     private float rotate;
     [SerializeField]
     private GameObject linternaPJ;
+
+    Animator animator;
     /*void Start()
     //{
         //currentHealth = maxHealth; // Inicializa la vida actual a la máxima al comienzo
@@ -39,6 +41,7 @@ public class JorguitoMovimiento : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            animator.SetBool("IsDead", true);
             Die(); // Si la vida llega a cero o menos, llama a la función Die
         }
         Debug.Log("Recibi daño");
@@ -47,21 +50,28 @@ public class JorguitoMovimiento : MonoBehaviour
     // Método para manejar la muerte del jugador
     void Die()
     {
-        // Puedes agregar aquí acciones como reproducir una animación de muerte, mostrar un mensaje de Game Over, reiniciar el nivel, etc.
+        
         Debug.Log("¡El jugador ha muerto!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        // Aquí podrías reiniciar el nivel, desactivar el personaje, mostrar un mensaje de Game Over, etc.
+        
     }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        //if(Input.GetKeyDown(KeyCode.L))
+        //{
+        //    animator.SetBool("IsDead", true);
+        //}
 
         //if (Input.GetKey(KeyCode.Q))
         //    rotate = -1;
@@ -79,5 +89,19 @@ public class JorguitoMovimiento : MonoBehaviour
         rb.MovePosition(rb.position + speed * Time.fixedDeltaTime * direction);
         shootingPosition.localPosition = direction;
         rb.MoveRotation(rb.rotation + rotate * rotationSpeed * Time.fixedDeltaTime);
+    }
+
+    private void LateUpdate()
+    {
+        animator.SetFloat("AxisX", horizontal);
+        animator.SetFloat("AxisY", vertical);
+        if (horizontal == 0 &&  vertical == 0)
+        {
+            animator.SetBool("IsMoving",false);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", true);
+        }
     }
 }
