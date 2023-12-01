@@ -5756,7 +5756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b99bbced8c82ff42a2045846752d942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killText: {fileID: 0}
+  killText: {fileID: 1514223583}
 --- !u!4 &2050739145
 Transform:
   m_ObjectHideFlags: 0
