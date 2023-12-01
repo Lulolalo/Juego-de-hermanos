@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class SeguimientoEnemigo : MonoBehaviour
 {
@@ -19,8 +20,11 @@ public class SeguimientoEnemigo : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
-            
             Destroy(gameObject);
+        }
+        else
+        {
+            //agregar sonido<
         }
 
     }

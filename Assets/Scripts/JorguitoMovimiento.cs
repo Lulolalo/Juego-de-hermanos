@@ -8,8 +8,6 @@ public class JorguitoMovimiento : MonoBehaviour
     
     public int maxHealth = 100; // Vida máxima del jugador
     public int currentHealth;
-    public int score;
-
     [SerializeField]
     private float speed;
 
@@ -116,8 +114,6 @@ public class JorguitoMovimiento : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);//
 
     }
-    public void AddScore(int amount)
-    {
-        score += amount;
-    }
+
+
 }
