@@ -5,6 +5,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class SeguimientoEnemigo : MonoBehaviour
 {
+    [Header("EnemigoSettings")]
     [SerializeField]
     private int Enemydamage;
 
@@ -14,6 +15,13 @@ public class SeguimientoEnemigo : MonoBehaviour
     public Transform jugador;
     public float velocidad = 5f;
 
+    public WinCondition winCondition;
+
+    public void Start()
+    {
+        winCondition = GameObject.FindGameObjectWithTag("WinCondition").GetComponent<WinCondition>();
+    }
+
 
     public void RecibirDaño(int damage)
     {
@@ -21,6 +29,7 @@ public class SeguimientoEnemigo : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            winCondition.AddKill();
         }
         else
         {
