@@ -17,7 +17,7 @@ public class WinCondition : MonoBehaviour
         killText.text = kill.ToString() + "KILLS";
     }
 
-
+    // texto kills
 
 
 
