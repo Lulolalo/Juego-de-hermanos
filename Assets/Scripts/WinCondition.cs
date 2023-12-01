@@ -7,19 +7,28 @@ using UnityEngine.UI;
 
 public class WinCondition : MonoBehaviour
 {
-    
+    public static WinCondition Instance;
+
     public TextMeshProUGUI killText;
 
     int kill = 0;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
         killText.text = kill.ToString() + "KILLS";
     }
 
-    // texto kills
 
-
+    public void AddKill()
+    {
+        kill += 1;
+        killText.text = kill.ToString() + "KILLS";
+    }
 
 
 

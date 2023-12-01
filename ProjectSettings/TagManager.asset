@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemigo
   - Enemigo2
+  - WinCondition
   layers:
   - Default
   - TransparentFX
