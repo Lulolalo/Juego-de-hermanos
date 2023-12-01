@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuInicial : MonoBehaviour
+public class MenuInstrucciones : MonoBehaviour
 {
     public void LoadGivenScene(string scene)
     {
@@ -14,3 +14,4 @@ public class MenuInicial : MonoBehaviour
         Application.Quit();
     }
 }
+

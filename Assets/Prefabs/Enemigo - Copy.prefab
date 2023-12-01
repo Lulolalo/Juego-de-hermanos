@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9171195132746997810}
   - component: {fileID: 9171195132746997812}
   m_Layer: 0
-  m_Name: Enemigo
+  m_Name: Enemigo - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
