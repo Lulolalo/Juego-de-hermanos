@@ -9,7 +9,7 @@ public class WinCondition : MonoBehaviour
     public static WinCondition instance;
 
     public int enemigosEliminados = 0;
-    public int objetivoEnemigos = 50;
+    public int objetivoEnemigos = 5;
 
     public Text textoGanador;
 

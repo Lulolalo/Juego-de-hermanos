@@ -40,6 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 222637575
+    locked: 0
+  - name: CollisionLayer
+    uniqueID: 785952173
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Characters
+    uniqueID: 1491188429
+    locked: 0
+  - name: ForwardDetails
+    uniqueID: 3523641245
     locked: 0

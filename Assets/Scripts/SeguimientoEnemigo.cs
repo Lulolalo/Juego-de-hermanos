@@ -19,6 +19,7 @@ public class SeguimientoEnemigo : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
+            
             Destroy(gameObject);
         }
 
@@ -41,12 +42,12 @@ public class SeguimientoEnemigo : MonoBehaviour
     {
         if (Other.CompareTag("Player"))
         {
-            // Detectamos una colisión con el jugador
-            // Asegúrate de configurar el tag "Player" en el objeto del jugador.
+            
 
             JorguitoMovimiento Enemydamage = Other.gameObject.GetComponent<JorguitoMovimiento>();
            
             Other.GetComponent<JorguitoMovimiento>().TakeDamage(5);
+
         }
         
     }

@@ -8,6 +8,7 @@ public class JorguitoMovimiento : MonoBehaviour
     
     public int maxHealth = 100; // Vida máxima del jugador
     public int currentHealth;
+    public int score;
 
     [SerializeField]
     private float speed;
@@ -18,7 +19,9 @@ public class JorguitoMovimiento : MonoBehaviour
     [SerializeField]
     private Transform shootingPosition;
 
+    private AudioSource audioSource;
 
+    public AudioClip hurtSound, deadSound, loseSound;
 
     private Rigidbody2D rb;
 
@@ -35,32 +38,17 @@ public class JorguitoMovimiento : MonoBehaviour
     }
     */
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage; // Reduce la vida por la cantidad de daño recibido
-
-        if (currentHealth <= 0)
-        {
-            animator.SetBool("IsDead", true);
-            Die(); // Si la vida llega a cero o menos, llama a la función Die
-        }
-        Debug.Log("Recibi daño");
-    }
-
-    // Método para manejar la muerte del jugador
-    void Die()
-    {
-        
-        Debug.Log("¡El jugador ha muerto!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
-    }
+    
 
     private void Awake()
     {
+        currentHealth = maxHealth;
+        
         rb = GetComponent<Rigidbody2D>();
 
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -103,5 +91,33 @@ public class JorguitoMovimiento : MonoBehaviour
         {
             animator.SetBool("IsMoving", true);
         }
+    }
+
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage; // Reduce la vida por la cantidad de daño recibido
+        audioSource.PlayOneShot(hurtSound);
+
+        if (currentHealth <= 0)
+        {
+            audioSource.PlayOneShot(deadSound);
+            Die(); // Si la vida llega a cero o menos, llama a la funcion Die
+            return;
+        }
+        Debug.Log("Recibi daño");
+    }
+    void Die()
+    {
+
+        audioSource.PlayOneShot(loseSound);
+        animator.SetBool("IsDead", true);
+        Debug.Log("¡El jugador ha muerto!");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);//
+
+    }
+    public void AddScore(int amount)
+    {
+        score += amount;
     }
 }
