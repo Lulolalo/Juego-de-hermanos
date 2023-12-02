@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WinCondition : MonoBehaviour
 {
@@ -28,6 +29,14 @@ public class WinCondition : MonoBehaviour
     {
         kill += 1;
         killText.text = kill.ToString() + "KILLS";
+    }
+
+    public void Update()
+    {
+        if(kill == 15)
+        {
+            SceneManager.LoadScene("Victoria");
+        }
     }
 
 

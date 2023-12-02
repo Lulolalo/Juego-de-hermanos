@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class JorguitoMovimiento : MonoBehaviour
 {
     
@@ -101,7 +102,8 @@ public class JorguitoMovimiento : MonoBehaviour
         {
             audioSource.PlayOneShot(deadSound);
             Die(); // Si la vida llega a cero o menos, llama a la funcion Die
-            return;
+            SceneManager.LoadScene("Derrota");
+
         }
         Debug.Log("Recibi daño");
     }
